@@ -4,68 +4,150 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy – Cart Keeper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary: #43a047;
+      --background: #f4f6f8;
+      --text: #2e2e2e;
+      --card-bg: #ffffff;
+      --border: #e0e0e0;
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
       line-height: 1.6;
-      margin: 2em auto;
-      padding: 0 1em;
-      max-width: 800px;
-      color: #333;
-      background: #fff;
+      padding: 0;
     }
-    h1 {
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1.5em 1em;
       text-align: center;
+      font-size: 1.8em;
+      font-weight: 600;
+      box-shadow: var(--shadow);
     }
-    strong {
-      display: block;
-      margin-top: 1.5em;
+
+    .container {
+      max-width: 860px;
+      margin: 2em auto;
+      padding: 1.5em;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
     }
-    p {
+
+    h2 {
+      margin-top: 2em;
+      font-size: 1.4em;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 0.5em;
+    }
+
+    p, li {
       margin-bottom: 1em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      background: #f1f3f6;
+      padding: 1em;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      font-size: 0.95em;
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1em;
+        padding: 1.25em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy – Cart Keeper</h1>
 
-  <p>Cart Keeper ("we", "our", or "us") respects your privacy. This policy explains how we collect, use, and protect your information when you use our smart shopping, pantry, and to-do app.</p>
+  <header>Privacy Policy – Cart Keeper</header>
 
-  <strong>1. Information We Collect</strong>
-  <p><b>Account Data:</b> When you sign up or log in, we collect your email address and password. This information is securely stored in our database.</p>
-  <p><b>List Data:</b> Your shopping lists, pantry items, and to-dos are stored on our servers to support syncing across devices.</p>
-  <p><b>Usage Data:</b> We collect technical data like device type, OS, and basic in-app activity to help improve performance.</p>
+  <div class="container">
+    <div class="meta">
+      <strong>Developer:</strong> Tal Feldman<br />
+      <strong>Last updated:</strong> July 17, 2025
+    </div>
 
-  <strong>2. How We Use Your Data</strong>
-  <p>We use your information to:</p>
-  <ul>
-    <li>Authenticate your account</li>
-    <li>Sync your lists and items securely between devices</li>
-    <li>Provide smart recommendations and features</li>
-    <li>Improve app stability and performance</li>
-  </ul>
+    <p>Cart Keeper is a smart list and pantry app that allows users to manage shopping lists, pantry items, and to-dos across devices. This Privacy Policy outlines how we collect, use, and protect your data.</p>
 
-  <strong>3. Data Storage and Sync</strong>
-  <p>Your data is stored securely in our database and is only accessible to you. We do not share or sell this information to third parties.</p>
+    <h2>Account and Authentication</h2>
+    <p>To use Cart Keeper, you must register with an email and password. This information is stored securely on our servers and used only for authentication and syncing your personal data.</p>
 
-  <strong>4. Security</strong>
-  <p>Passwords are hashed before storage. All communications with our API are encrypted using HTTPS. While we apply best practices, no system is 100% secure.</p>
+    <h2>Data We Collect</h2>
+    <ul>
+      <li><strong>Email & Password:</strong> Required to create and access your account. Passwords are securely hashed before storage.</li>
+      <li><strongList Data:</strong> Your shopping lists, to-dos, and pantry items are stored on our servers to sync across your devices.</li>
+      <li><strong>Usage Data:</strong> Basic technical data (e.g., device type, request logs) used to ensure app performance and improve service reliability.</li>
+    </ul>
 
-  <strong>5. Your Rights</strong>
-  <p>You can:</p>
-  <ul>
-    <li>View and edit your data within the app</li>
-    <li>Delete your lists or your entire account</li>
-    <li>Request full data removal by contacting us</li>
-  </ul>
+    <h2>How Your Data Is Used</h2>
+    <ul>
+      <li>To authenticate and manage your account securely.</li>
+      <li>To store and sync your lists across devices.</li>
+      <li>To improve app features and performance.</li>
+      <li>To send you optional updates or feature announcements.</li>
+    </ul>
 
-  <strong>6. Children’s Privacy</strong>
-  <p>Our app is not intended for children under 13. We do not knowingly collect data from children. Please contact us if you believe we have.</p>
+    <h2>Data Security</h2>
+    <p>All data is encrypted during transfer using HTTPS. Passwords are hashed with modern cryptographic methods. We apply standard security practices to protect our systems and infrastructure.</p>
 
-  <strong>7. Policy Updates</strong>
-  <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app and on this page.</p>
+    <h2>Data Sharing</h2>
+    <p>Your data is not sold or shared with advertisers. It may be shared only with trusted service providers (e.g., for cloud hosting) under strict agreements and only as necessary to provide the service.</p>
 
-  <p><strong>Contact:</strong> feldman.ofer11@gmail.com<br>
-  <strong>Last updated:</strong> July 17, 2025</p>
+    <h2>Your Rights</h2>
+    <ul>
+      <li>View or edit your data from within the app.</li>
+      <li>Delete any list, or your entire account, at any time.</li>
+      <li>Request account deletion by emailing us directly.</li>
+    </ul>
+
+    <h2>Children’s Privacy</h2>
+    <p>Cart Keeper is not intended for children under 13. We do not knowingly collect personal information from children. If we become aware of such data, we will delete it promptly.</p>
+
+    <h2>Policy Updates</h2>
+    <p>This policy may change over time. Major changes will be communicated in-app or via email. The latest version is always available on this page.</p>
+
+    <h2>Contact</h2>
+    <ul>
+      <li>Name: Tal Feldman</li>
+      <li>Email: <a href="mailto:feldman.ofer11@gmail.com">feldman.ofer11@gmail.com</a></li>
+      <li>Location: Israel</li>
+    </ul>
+  </div>
 </body>
 </html>
