@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Feldman Alert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --m3-surface: #fef7ff;
+            --m3-on-surface: #1d1b20;
+            --m3-surface-container: #f3edf7;
+            --m3-primary: #6750a4;
+            --m3-on-primary: #ffffff;
+            --m3-primary-container: #eaddff;
+            --m3-on-primary-container: #21005d;
+            --m3-secondary: #625b71;
+            --m3-outline-variant: #cac4d0;
+            --m3-error: #b3261e;
+        }
+
+        body {
+            background-color: var(--m3-surface);
+            color: var(--m3-on-surface);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+            background-color: var(--m3-surface-container);
+            padding: 32px;
+            border-radius: 28px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            color: var(--m3-primary);
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            font-weight: 500;
+            color: var(--m3-secondary);
+            font-size: 1.1rem;
+        }
+
+        .disclaimer-card {
+            background-color: #ffeaea;
+            border: 1px solid var(--m3-error);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .disclaimer-card .icon {
+            font-size: 24px;
+            color: var(--m3-error);
+            margin-top: 2px;
+        }
+
+        .disclaimer-card p {
+            margin: 0;
+            font-weight: 600;
+            color: #4a0404;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: var(--m3-on-primary-container);
+            background-color: var(--m3-primary-container);
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: #49454f;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            border-top: 1px solid var(--m3-outline-variant);
+            padding-top: 24px;
+            color: var(--m3-secondary);
+            font-size: 0.9rem;
+        }
+
+        span.highlight {
+            color: var(--m3-primary);
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Feldman Alert - Last updated March 2026</div>
+        </header>
+
+        <div class="disclaimer-card">
+            <div class="icon">⚠️</div>
+            <p>
+                <strong>IMPORTANT DISCLAIMER</strong>: The developer "Feldman" is not responsible for the performance of this application or any use of it. This app is for informational and educational purposes only. It should NOT be relied upon as the primary or sole source of life-saving alerts. Always follow official instructions from local authorities.
+            </p>
+        </div>
+
+        <section>
+            <h2>Information Collection</h2>
+            <p>
+                Feldman Alert is designed to deliver real-time emergency notifications with minimum latency. Your privacy is our priority, and we do not track or save your movements. To achieve this, we collect:
+            </p>
+            <ul>
+                <li><strong>Push Notification Tokens</strong>: FCM (Firebase) and Pushy tokens are used strictly to route alerts to your device and are stored securely on our backend.</li>
+                <li><strong>Location Data</strong>: The app uses your location locally to determine if an alert is relevant to you. This data is processed <span class="highlight">strictly on your device</span> and is <span class="highlight">never</span> saved on or uploaded to our servers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How Information is Used</h2>
+            <p>
+                Your data is used strictly for the following purposes:
+            </p>
+            <ul>
+                <li>Delivering low-latency emergency notifications.</li>
+                <li>Grouping alerts based on your current or "Home" location to reduce notification fatigue (Smart Merging).</li>
+                <li>Improving the delivery success rate across multiple push channels (FCM & Pushy).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>
+                This application utilizes the following third-party services:
+            </p>
+            <ul>
+                <li><strong>Google Firebase (FCM)</strong>: To deliver push notifications using Google Infrastructure.</li>
+                <li><strong>Pushy</strong>: To provide a high-priority MQTT fallback for notification delivery.</li>
+                <li><strong>MapLibre</strong>: For map visualization and polygon rendering of alert areas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Security & Retention</h2>
+            <p>
+                We do not sell, trade, or otherwise transfer your information to outside parties. Registration tokens are transient and can be refreshed or revoked at any time by clearing application data or resetting your device profile. We implement a variety of security measures to maintain the safety of your information across our backend infrastructure.
+            </p>
+        </section>
+
+        <section>
+            <h2>Liability</h2>
+            <p>
+                By using <span class="highlight">Feldman Alert</span>, you acknowledge that the developer <span class="highlight">Feldman</span> provides this service "as-is" without any warranties of any kind. We waive all liability for any loss, damage, or harm resulting from the use or malfunction of this application.
+            </p>
+        </section>
+
+        <footer>
+            &copy; 2026 Feldman. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
